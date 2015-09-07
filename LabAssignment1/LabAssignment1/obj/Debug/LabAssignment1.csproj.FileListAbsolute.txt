@@ -1,0 +1,6 @@
+C:\Users\Ashley\Desktop\Class-IT1050\LabAssignment1\LabAssignment1\bin\Debug\LabAssignment1.exe.config
+C:\Users\Ashley\Desktop\Class-IT1050\LabAssignment1\LabAssignment1\obj\Debug\LabAssignment1.csprojResolveAssemblyReference.cache
+C:\Users\Ashley\Desktop\Class-IT1050\LabAssignment1\LabAssignment1\bin\Debug\LabAssignment1.exe
+C:\Users\Ashley\Desktop\Class-IT1050\LabAssignment1\LabAssignment1\bin\Debug\LabAssignment1.pdb
+C:\Users\Ashley\Desktop\Class-IT1050\LabAssignment1\LabAssignment1\obj\Debug\LabAssignment1.exe
+C:\Users\Ashley\Desktop\Class-IT1050\LabAssignment1\LabAssignment1\obj\Debug\LabAssignment1.pdb
