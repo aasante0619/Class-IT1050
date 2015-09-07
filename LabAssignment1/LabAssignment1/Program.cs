@@ -49,10 +49,11 @@ namespace LabAssignment1
             System.Console.WriteLine("Are you a US Citizen?");
             isCitizen = bool.Parse(System.Console.ReadLine());
 
-            
+            canVote = (age >= 18) && (isCitizen);
 
 
-            System.Console.WriteLine(fullName + canVote);
+
+            System.Console.WriteLine("Can" +" " + fullName +" " + "vote ?" +" " + canVote);
 
             System.Console.ReadKey();
 
