@@ -40,7 +40,7 @@ namespace LabAssignment1
             System.Console.WriteLine("How many inches beyond your base height in feet should be added?");
             heightInches = int.Parse(System.Console.ReadLine());
 
-            totalHeightCM = heightFeet + (2.54 * heightInches);
+            totalHeightCM = (heightFeet *12*2.54) + (2.54 * heightInches);
             System.Console.WriteLine("Total height for" + " " + fullName + " " + "is" + " " + totalHeightCM );
 
             System.Console.WriteLine("What is your age?");
