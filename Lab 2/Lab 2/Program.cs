@@ -24,8 +24,24 @@ namespace Lab_2
             System.Console.WriteLine("Is this person married? Answer true or false.");
             person1.isMarried = bool.Parse(System.Console.ReadLine());
 
+            if (System.Console.ReadLine().ToLower().StartsWith("t"))
+            {
+                person1.Spouse = new Person();
+                System.Console.WriteLine("What is thes spouse's Name?");
+                person1.Spouse.FirstName = System.Console.ReadLine();
+                System.Console.WriteLine("How old is the spouse? ");
+                person1.Spouse.age = int.Parse(System.Console.ReadLine());
+                
+         
+
+            }
 
             person1.GetFullName();
+            person1.PrintNameAndAge();
+            person1.Spouse.GetFullName();
+            person1.Spouse.PrintNameAndAge();
+
+
 
             Person person2 = new Person();
             System.Console.WriteLine("What is the first name of Person 2?");
@@ -40,9 +56,22 @@ namespace Lab_2
             System.Console.WriteLine("Is this person married? Answer true or false.");
             person2.isMarried = bool.Parse(System.Console.ReadLine());
 
+            if (System.Console.ReadLine().ToLower().StartsWith("t"))
+            {
+                person2.Spouse = new Person();
+                System.Console.WriteLine("What is thes spouse's Name?");
+                person2.Spouse.FirstName = System.Console.ReadLine();
+                System.Console.WriteLine("How old is the spouse? ");
+                person2.Spouse.age = int.Parse(System.Console.ReadLine());
+
+
+
+            }
             person2.GetFullName();
-
-
+            person2.PrintNameAndAge();
+           
+            person2.Spouse.GetFullName();
+            person2.Spouse.PrintNameAndAge();
 
 
             Person person3 = new Person();
@@ -58,8 +87,23 @@ namespace Lab_2
             System.Console.WriteLine("Is this person married? Answer true or false.");
             person3.isMarried = bool.Parse(System.Console.ReadLine());
 
-            person3.GetFullName();
 
+            if (System.Console.ReadLine().ToLower().StartsWith("t"))
+            {
+                person3.Spouse = new Person();
+                System.Console.WriteLine("What is thes spouse's Name?");
+                person3.Spouse.FirstName = System.Console.ReadLine();
+                System.Console.WriteLine("How old is the spouse? ");
+                person3.Spouse.age = int.Parse(System.Console.ReadLine());
+
+
+
+            }
+            person3.GetFullName();
+            person3.PrintNameAndAge();
+
+            person3.Spouse.GetFullName();
+            person3.Spouse.PrintNameAndAge();
 
 
 

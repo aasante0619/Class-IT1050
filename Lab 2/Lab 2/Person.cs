@@ -10,6 +10,8 @@ namespace Lab_2
     {
         public bool isMarried;
 
+
+
         public int age;
         public string FirstName;
         public string LastName;
@@ -34,6 +36,8 @@ namespace Lab_2
 
         public void PrintNameAndAge()
         {
+            System.Console.WriteLine(GetFullName() + " "+ "is" + " " + this.age+ " " +" years old.");
+             
 
 
         }
