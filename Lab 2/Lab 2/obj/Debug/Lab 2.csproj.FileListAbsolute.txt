@@ -1,0 +1,6 @@
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2\Lab 2\bin\Debug\Lab 2.exe.config
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2\Lab 2\obj\Debug\Lab 2.csprojResolveAssemblyReference.cache
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2\Lab 2\bin\Debug\Lab 2.exe
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2\Lab 2\bin\Debug\Lab 2.pdb
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2\Lab 2\obj\Debug\Lab 2.exe
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2\Lab 2\obj\Debug\Lab 2.pdb
