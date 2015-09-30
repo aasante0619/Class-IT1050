@@ -8,7 +8,13 @@ namespace Lab_2
 {
     class Person
     {
-        public bool isMarried;
+        
+        public bool IsMarried()
+
+        {
+            return Spouse != null;
+        }
+
 
 
 
@@ -16,7 +22,7 @@ namespace Lab_2
         public string FirstName;
         public string LastName;
         public Person Spouse;
-        public static double AverageAge;
+        //public static double AverageAge;
 
 
         public string GetFullName()
@@ -27,8 +33,6 @@ namespace Lab_2
             FullName += this.LastName;
 
             return FullName;
-
-
 
 
         }

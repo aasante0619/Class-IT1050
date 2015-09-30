@@ -21,10 +21,13 @@ namespace Lab_2
             System.Console.WriteLine("Whatis the age of Person 1?");
             person1.age = int.Parse(System.Console.ReadLine());
 
+
+
             System.Console.WriteLine("Is this person married? Answer true or false.");
-            person1.isMarried = bool.Parse(System.Console.ReadLine());
 
             if (System.Console.ReadLine().ToLower().StartsWith("t"))
+
+            
             {
                 person1.Spouse = new Person();
                 System.Console.WriteLine("What is thes spouse's Name?");
@@ -32,8 +35,6 @@ namespace Lab_2
                 System.Console.WriteLine("How old is the spouse? ");
                 person1.Spouse.age = int.Parse(System.Console.ReadLine());
                 
-         
-
             }
 
             person1.GetFullName();
@@ -54,7 +55,12 @@ namespace Lab_2
             person2.age = int.Parse(System.Console.ReadLine());
 
             System.Console.WriteLine("Is this person married? Answer true or false.");
-            person2.isMarried = bool.Parse(System.Console.ReadLine());
+
+            // if (person2.isMarried())
+            // {
+            // }
+            //
+            // person2.isMarried = bool.Parse(System.Console.ReadLine());
 
             if (System.Console.ReadLine().ToLower().StartsWith("t"))
             {
@@ -85,7 +91,7 @@ namespace Lab_2
             person3.age = int.Parse(System.Console.ReadLine());
 
             System.Console.WriteLine("Is this person married? Answer true or false.");
-            person3.isMarried = bool.Parse(System.Console.ReadLine());
+            //person3.isMarried = bool.Parse(System.Console.ReadLine());
 
 
             if (System.Console.ReadLine().ToLower().StartsWith("t"))
