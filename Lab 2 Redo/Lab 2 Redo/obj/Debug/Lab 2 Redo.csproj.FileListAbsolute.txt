@@ -1,0 +1,6 @@
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2 Redo\Lab 2 Redo\bin\Debug\Lab 2 Redo.exe.config
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2 Redo\Lab 2 Redo\obj\Debug\Lab 2 Redo.csprojResolveAssemblyReference.cache
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2 Redo\Lab 2 Redo\bin\Debug\Lab 2 Redo.exe
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2 Redo\Lab 2 Redo\bin\Debug\Lab 2 Redo.pdb
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2 Redo\Lab 2 Redo\obj\Debug\Lab 2 Redo.exe
+C:\Users\Ashley\Desktop\Class-IT1050\Lab 2 Redo\Lab 2 Redo\obj\Debug\Lab 2 Redo.pdb
