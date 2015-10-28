@@ -27,8 +27,9 @@ namespace Lab3
 
         public void PrintNameTeacherCourse()
         {
-            System.Console.WriteLine(this.fullname + " " + " got a" + " " + this.Grade + " " + " in "  +  this.Teacher + "'s" + "Class.");
-
+            //System.Console.WriteLine(this.fullname + " " + " got a" + " " + this.Grade + this.Teacher.GetFirstname());
+            System.Console.WriteLine(this.fullname + " " + " got a" + " " + this.Grade + ".");
+            this.Teacher.PrintInfo();
         }
     }
 }
