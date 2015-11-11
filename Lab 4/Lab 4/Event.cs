@@ -5,26 +5,28 @@ namespace Lab_4
     class Event
     {
         public string movieGoer;
-        public int Age;
+        public int movieGoerAge;
         public double timeOfDay;
         public int numberOfLargeSoda;
         public int numberOfSmallSoda;
         public int numberOfHotDogs;
         public int numberOfPopcorn;
         public int numberOfCandies;
-
-
+        public double FoodPriceTotal;
 
         public double TicketPrice;
+        public double ConcessionPrice;
 
-        
-        public void GetEventInfo()
+        public Event()
         {
+            System.Console.WriteLine("What is the time of day (in military time)?");
+            this.timeOfDay = int.Parse(System.Console.ReadLine());
+
             System.Console.WriteLine(" What is the name of the moviegoer?");
             this.movieGoer = System.Console.ReadLine();
 
             System.Console.WriteLine("What is the moviegoer's age?");
-            this.Age = int.Parse(System.Console.ReadLine());
+            this.movieGoerAge = int.Parse(System.Console.ReadLine());
 
             System.Console.WriteLine("What is the time of day (in military time)?");
             this.timeOfDay = int.Parse(System.Console.ReadLine());
@@ -44,56 +46,46 @@ namespace Lab_4
             System.Console.WriteLine("How many orders of Candies does the moviegoer want?");
             this.numberOfCandies = int.Parse(System.Console.ReadLine());
 
-           
+            this.TicketPrice = this.calculateTicketPrice();
+            this.ConcessionPrice = this.calculateFoodPrices();
         }
 
-
-        
-
-        public void CalculateTicketPrice()
+        private double calculateTicketPrice()
         {
-            if( this.Age < 17 && this.timeOfDay < 1200)
+            if (this.timeOfDay < 1200)
             {
-                TicketPrice = 3.99;
+                return this.getMatineePrice(this.movieGoerAge);
             }
-                
-            if (this.Age < 17 && this.timeOfDay > 1200)
-
+            else
             {
-                TicketPrice = 6.99;
-            }
-
-            if (this.Age > 17 && this.Age < 55 && this.timeOfDay < 1200)
-
-            {
-                TicketPrice = 5.99;
-            }
-
-            if (this.Age > 17 && this.Age < 55 && this.timeOfDay > 1200)
-
-            {
-                TicketPrice = 10.99;
-            }
-
-            if (this.Age > 17 && this.Age > 55 && this.timeOfDay < 1200)
-
-            {
-                TicketPrice = 4.50;
-            }
-
-
-            if (this.Age > 17 && this.Age > 55 && this.timeOfDay > 1200)
-
-            {
-                TicketPrice = 8.50;
+                return this.getEveningPrice(this.movieGoerAge);
             }
         }
 
-      
-        
+        private double getMatineePrice(int age)
+        {
+            if (age < 17) { return 3.99; }
+            else if (age < 55) { return 6.99; }
+            else { return 5.99; }
+        }
 
+        private double getEveningPrice(int age)
+        {
+            if (age < 17) { return 4.50; }
+            else if (age < 55) { return 10.99; }
+            else { return 8.50; }
+        }
 
-
+        public double calculateFoodPrices()
+        {
+            double total = 0;
+            total += (this.numberOfLargeSoda * 5.99);
+            total += (this.numberOfSmallSoda * 3.50);
+            total += (this.numberOfHotDogs * 3.99);
+            total += (this.numberOfPopcorn * 4.50);
+            total += (this.numberOfCandies * 1.99);
+            return total;
         }
     }
+}
 
