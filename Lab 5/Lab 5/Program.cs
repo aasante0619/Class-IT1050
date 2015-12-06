@@ -10,10 +10,16 @@ namespace Lab_5
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Press Enter to Enter a Course!");
+
             Course CourseA = new Course();
-            CourseA.GetCourseInfo();
-            CourseA.PrintInfo();
+            CourseA.PrintCourseInfo();
+   
+            
+            CourseA.GetClassInfo();
+           
+
+            System.Console.ReadKey();
+
         }
     }
 }
